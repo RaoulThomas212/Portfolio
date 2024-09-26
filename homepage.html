@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <link rel="stylesheet" href="homepage.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo"><img src="Assets/3x/Logo_white.png" alt="My Logo"></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-container">
+            <div class="home-title">
+                <h2>Hey, I'm Raoul!</h2>
+            </div>
+            <div class="home-content">
+                <p>I love stepping into other people’s shoes, feeling each annoying pebble in the shoes, 
+                    and making sure the I remove those pebbles before returning the shoes I stole (jokes, 
+                    I don’t steal shoes, just hearts >3). My passion lies in refining every step of a path, 
+                    creating experiences that feel natural and effortless, making an impact where it matters. </p>
+                <a href="#portfolio" class="button">View My Work</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="experience">
+        <div class="experience-container">
+            <div class="experience-title">
+                <h2>Experience</h2>
+            </div>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <h3>Network International</h3>
+                    <h4>Graphic Designer</h4>
+                    <ul>
+                        <li>Led the design and development of comprehensive branding projects including logo creation and collateral</li>
+                        <li>Crafted visually compelling and effective internal presentations and product catalogues to support corporate communications and client interactions</li>
+                        <li>Designed high-fidelity UI wireframes for in-house AI tool, custom web parts for SharePoint sites and client portals</li>
+                        <li>Collaborated closely with marketing and technology teams to ensure cohesive strategic solutions</li>
+                        <li>Developed and maintained internal SharePoint sites to house critical internal communications and training</li>
+                        <li>Collaborated closely with GCOO to develop illustrations of proprietary offerings for media relations and online media</li>
+                    </ul>
+                    <p><em>November 2023 - September 2024</em></p>
+                </div>
+                <div class="experience-item">
+                    <h3>Skyne</h3>
+                    <h4>Designer</h4>
+                    <ul>
+                        <li>Crafted and enhanced brand research and synthesis while fostering client communication and workshops</li>
+                        <li>Produced animation and videography</li>
+                        <li>Managed company social media</li>
+                    </ul>
+                    <p><em>May 2022 - July 2022</em></p>
+                </div>
+                <div class="experience-item">
+                    <h3>Apple Inc.</h3>
+                    <h4>Product Specialist</h4>
+                    <ul>
+                        <li>Delivered outstanding customer service through active communication</li>
+                        <li>Fostered lasting customer-brand relationships</li>
+                        <li>Assisted customers with technical support and troubleshooting</li>
+                    </ul>
+                    <p><em>August 2021 - November 2021</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Specialities">
+        <div class="specialties-container">
+            <div class="specialties-title">
+                <h2>Specialties</h2>
+            </div>
+            <div class="specialties-content">
+                <div class="specialty-item">UX Design</div>
+                <div class="specialty-item">UI Design</div>
+                <div class="specialty-item">Branding</div>
+                <div class="specialty-item">Design Thinking</div>
+                <div class="specialty-item">Service Design</div>
+                <div class="specialty-item">Data Analytics</div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-title">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item item1">
+                    <img src="Assets/UOC Mockup.png" alt="Portfolio Image 1">
+                </div>
+                <div class="portfolio-item item2">
+                    <img src="Assets/Metro Mockups.png" alt="Portfolio Image 2">
+                </div>
+                <div class="portfolio-item item3">
+                    <img src="Assets/Ikea Mockups.png" alt="Portfolio Image 3">
+                </div>
+                <div class="portfolio-item item4">
+                    <img src="Assets/Brand Identity mockup.png" alt="Portfolio Image 4">
+                </div>
+                <div class="portfolio-item item5">
+                    <img src="Assets/Design Process Mockup.png" alt="Portfolio Image 5">
+                </div>
+                <div class="portfolio-item item6">
+                    <img src="Assets/Banner WiN Mockup.png" alt="Portfolio Image 6">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-form">
+                <form action="send_email.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Raoul Thomas. All rights reserved.</p>
+    </footer>
+</body>
+</html>

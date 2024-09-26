@@ -1,0 +1,437 @@
+/* Apply Montserrat font globally */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styling (Dark Blue Background) */
+header {
+    background-color: #002244; /* Dark blue */
+    padding: 1rem 2rem;
+    position: relative; /* Allows absolute positioning for the logo and nav */
+    height: 100px; /* Adjust height to fit logo and nav bar */
+}
+
+/* Logo Styling (Top Left Corner) */
+.logo {
+    position: absolute; /* Separate from the nav */
+    top: 70%;
+    left: -47%;
+    transform: translateY(-80%); /* Vertically center the logo in the header */
+    z-index: 1002; /* Keep the logo above the nav bar */
+}
+
+.logo img {
+    height: 70px; /* Adjust the logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Bar (Centered Tube Shape) */
+nav {
+    background-color: rgba(255, 255, 255, 0.1); /* Translucent tube background */
+    border-radius: 50px; /* Tube-like shape */
+    padding: 15px 20px; /* Space inside the tube */
+    display: flex;
+    justify-content: center; /* Center the nav links horizontally */
+    position: absolute;
+    top: 50%; /* Align vertically with the logo */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfectly center the nav bar */
+    width: 45%; /* Adjust width of the tube */
+    z-index: 1000; /* Ensure nav bar is below the logo */
+    backdrop-filter: blur(10px); /* Optional blur effect */
+}
+
+/* Navigation Links Styling */
+nav ul {
+    display: flex; /* Horizontal layout for the links */
+    list-style: none; /* Remove default bullets */
+    gap: 20px; /* Space between the nav links */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px; /* Add padding to each link for spacing */
+    border-radius: 5px; /* Optional rounded buttons */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00b4b6; /* Teal accent on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background change on hover */
+    backdrop-filter: blur(10px);
+}
+
+
+/* Intro Section (Two-Column Layout) */
+#home {
+    padding: 60px 20px;
+    background-color: #002244; /* Dark blue */
+    color: #fff;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Limit the width for better control */
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+}
+
+.home-title {
+    flex: 1; /* Take up half the width */
+    text-align: left; /* Ensure title is left-aligned */
+    padding-right: 20px; /* Space between title and content */
+}
+
+.home-title h2 {
+    font-size: 5rem; /* Make the title big and bold */
+    font-weight: 600;
+    margin: 0;
+}
+
+.home-content {
+    flex: 1; /* Take up the other half */
+    text-align: left; /* Ensure content is left-aligned */
+    padding-left: 20px; /* Space between title and content */
+}
+
+.home-content p {
+    font-size: 1.2rem; /* Adjust text size for readability */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.home-content .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b4b6; /* Teal */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.home-content .button:hover {
+    background-color: #008b8c; /* Darker teal on hover */
+}
+
+
+/* Experience Section (Two-Column Layout) */
+#experience {
+    padding: 60px 20px;
+    background-color: #f5f5f0; /* Bone white */
+    color: #333;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Limit the width for better control */
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+}
+
+.experience-title {
+    flex: 1; /* Take up half the width */
+    text-align: left;
+    padding-right: 20px;
+    color:#00b4b6
+}
+
+.experience-title h2 {
+    font-size: 3.5rem; /* Make the title big and bold */
+    font-weight: 600;
+    margin: 0;
+}
+
+.experience-content {
+    flex: 1; /* Take up the other half */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.experience-content h3 {
+    font-size: 1.5rem; /* Smaller font size for company names */
+    font-weight: 600;
+    margin: 10px 0 5px; /* Adjust margins as needed */
+}
+
+.experience-content h4 {
+    font-size: 1.2rem; /* Smaller font size for job titles */
+    font-weight: 400;
+    margin: 5px 0; /* Adjust margins as needed */
+}
+
+/* Custom Bullets for Experience Section */
+.experience-content ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove padding to align bullets with the text */
+    margin: 0; /* Remove default margins */
+}
+
+.experience-content li {
+    font-size: 1rem; /* Smaller font size for descriptions */
+    line-height: 1.6;
+    margin: 0; /* Remove default margins */
+    position: relative; /* Allows positioning of the custom bullets */
+    padding-left: 2rem; /* Space for the custom bullets */
+}
+
+.experience-content li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem; /* Adjust vertical alignment of the bullet */
+    width: 0.5rem; /* Diameter of the circle */
+    height: 0.5rem; /* Diameter of the circle */
+    border-radius: 50%; /* Circle shape */
+    border: 1px solid #002244; /* Black stroke */
+    background-color: transparent; /* No fill */
+}
+
+
+
+/* Services Section (Two-Column Layout) */
+#Specialities {
+    padding: 60px 20px;
+    background-color: #002244; /* Dark blue */
+    color: #fff;
+    text-align: center;
+}
+
+.specialties-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Limit the width for better control */
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+}
+
+.specialties-title {
+    flex: 1; /* Take up half the width */
+    text-align: left;
+    padding-right: 20px;
+}
+
+.specialties-title h2 {
+    font-size: 3.5rem; /* Make the title big and bold */
+    font-weight: 600;
+    margin: 0;
+}
+
+.specialties-content {
+    flex: 1; /* Take up the other half */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+}
+
+.specialty-item {
+    background-color: transparent; /* No fill color */
+    border: 2px solid #00b4b6; /* Light blue border */
+    color: #00b4b6; /* Light blue text */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px #36c1e81a;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    height: 150px; /* Equal height for all boxes */
+}
+
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 20px;
+    background-color: #f5f5f0; /* Bone white */
+    color: #333;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.portfolio-title {
+    flex: 1; /* Take up half the width */
+    text-align: left;
+    padding-right: 20px;
+    color:#00b4b6
+}
+
+.portfolio-title h2 {
+    font-size: 3.5rem; /* Make the title big and bold */
+    font-weight: 600;
+    margin: 0;
+}
+
+.portfolio-grid {
+    flex: 2; /* Take up the remaining space */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: repeat(3, 200px); /* 3 rows with fixed height */
+    gap: 20px; /* Space between grid items */
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden; /* Hide overflow to keep images contained within boxes */
+    background-color: #fff;
+    border: 2px solid #00b4b6;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust the height of each box */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+    border-radius: 5px;
+}
+
+
+
+/* Customize size and position of each item */
+.item1 {
+    grid-column: span 2; /* Span 2 columns */
+    grid-row: span 2; /* Span 2 rows */
+    height: 100%;
+}
+
+.item2 {
+    grid-column: span 2; /* Span 1 column */
+    grid-row: span 1; /* Span 1 row */
+    height: 100%
+}
+
+.item3 {
+    grid-column: span 2; /* Span 2 columns */
+    grid-row: span 1; /* Span 1 row */
+    height: 100%
+}
+
+.item4 {
+    grid-column: span 1; /* Span 1 column */
+    grid-row: span 1; /* Span 1 row */
+}
+
+.item5 {
+    grid-column: span 2; /* Span 2 columns */
+    grid-row: span 1; /* Span 1 row */
+}
+
+.item6 {
+    grid-column: span 1; /* Span 1 column */
+    grid-row: span 1; /* Span 2 rows */
+}
+
+
+/* Contact Section (Two-Column Layout) */
+#contact {
+    padding: 60px 20px;
+    background-color: #002244; /* Bone white */
+    color: #ffffff;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Limit the width for better control */
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+}
+
+.contact-title {
+    flex: 1; /* Take up half the width */
+    text-align: left;
+    padding-right: 20px;
+}
+
+.contact-title h2 {
+    font-size: 3.5rem; /* Big and bold header */
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact-form {
+    flex: 1; /* Take up the other half */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form elements */
+}
+
+.form-group label {
+    font-size: 1.2rem; /* Adjust label size */
+    margin-bottom: 10px;
+    display: block; /* Ensure label is on its own line */
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00b4b6; /* Teal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Align the button to the left */
+}
+
+button:hover {
+    background-color: #008b8c; /* Darker teal on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #002244;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
